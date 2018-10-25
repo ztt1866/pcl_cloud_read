@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /media/ttzhou/documents/robosense/qtUi/1025/pcl_cloud_visualizer/pcl_cloud_read/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_829e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_829e2.dir/build.make CMakeFiles/cmTC_829e2.dir/build
+make[1]: Entering directory '/media/ttzhou/documents/robosense/qtUi/1025/pcl_cloud_visualizer/pcl_cloud_read/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_829e2.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_829e2.dir/CheckSymbolExists.c.o   -c /media/ttzhou/documents/robosense/qtUi/1025/pcl_cloud_visualizer/pcl_cloud_read/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_829e2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_829e2.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_829e2.dir/CheckSymbolExists.c.o  -o cmTC_829e2 -rdynamic 
+CMakeFiles/cmTC_829e2.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_829e2.dir/build.make:97: recipe for target 'cmTC_829e2' failed
+make[1]: *** [cmTC_829e2] Error 1
+make[1]: Leaving directory '/media/ttzhou/documents/robosense/qtUi/1025/pcl_cloud_visualizer/pcl_cloud_read/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_829e2/fast' failed
+make: *** [cmTC_829e2/fast] Error 2
+
+File /media/ttzhou/documents/robosense/qtUi/1025/pcl_cloud_visualizer/pcl_cloud_read/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /media/ttzhou/documents/robosense/qtUi/1025/pcl_cloud_visualizer/pcl_cloud_read/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3aeb0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3aeb0.dir/build.make CMakeFiles/cmTC_3aeb0.dir/build
+make[1]: Entering directory '/media/ttzhou/documents/robosense/qtUi/1025/pcl_cloud_visualizer/pcl_cloud_read/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3aeb0.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3aeb0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3aeb0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3aeb0.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_3aeb0.dir/CheckFunctionExists.c.o  -o cmTC_3aeb0 -rdynamic -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3aeb0.dir/build.make:97: recipe for target 'cmTC_3aeb0' failed
+make[1]: *** [cmTC_3aeb0] Error 1
+make[1]: Leaving directory '/media/ttzhou/documents/robosense/qtUi/1025/pcl_cloud_visualizer/pcl_cloud_read/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3aeb0/fast' failed
+make: *** [cmTC_3aeb0/fast] Error 2
+
+
