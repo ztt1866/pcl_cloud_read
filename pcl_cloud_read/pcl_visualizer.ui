@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>945</width>
-    <height>543</height>
+    <width>1225</width>
+    <height>680</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QLabel" name="labelimage">
     <property name="geometry">
      <rect>
-      <x>-4</x>
-      <y>36</y>
+      <x>320</x>
+      <y>50</y>
       <width>441</width>
       <height>371</height>
      </rect>
@@ -30,19 +30,19 @@
    <widget class="QVTKWidget" name="qvtkWidget">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>30</y>
+      <x>760</x>
+      <y>40</y>
       <width>461</width>
-      <height>381</height>
+      <height>391</height>
      </rect>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>50</x>
       <y>0</y>
-      <width>269</width>
+      <width>282</width>
       <height>29</height>
      </rect>
     </property>
@@ -50,7 +50,7 @@
      <item>
       <widget class="QPushButton" name="pushButton_dir">
        <property name="text">
-        <string>open dir</string>
+        <string>open pic dir</string>
        </property>
       </widget>
      </item>
@@ -70,52 +70,108 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>440</y>
+      <x>330</x>
+      <y>470</y>
       <width>452</width>
       <height>29</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <widget class="QPushButton" name="previous">
-       <property name="text">
-        <string>previous</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>268</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QPushButton" name="next">
-       <property name="text">
-        <string>next</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    <layout class="QHBoxLayout" name="horizontalLayout_2"/>
    </widget>
+   <widget class="QPushButton" name="on_push_bin">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>0</y>
+      <width>99</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>open_bin_file</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="on_push_bin_dir">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>0</y>
+      <width>99</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>open_pcd_dir</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>291</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="next">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>470</y>
+      <width>85</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>next</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="previous">
+    <property name="geometry">
+     <rect>
+      <x>335</x>
+      <y>470</y>
+      <width>85</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>previous</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_pic">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>291</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>labelimage</zorder>
+   <zorder>qvtkWidget</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>on_push_bin</zorder>
+   <zorder>on_push_bin_dir</zorder>
+   <zorder>listWidget</zorder>
+   <zorder>horizontalSpacer</zorder>
+   <zorder>next</zorder>
+   <zorder>previous</zorder>
+   <zorder>horizontalSpacer</zorder>
+   <zorder>listWidget_pic</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>945</width>
+     <width>1225</width>
      <height>31</height>
     </rect>
    </property>

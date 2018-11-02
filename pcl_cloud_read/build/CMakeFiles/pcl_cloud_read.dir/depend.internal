@@ -4,8 +4,11 @@
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QDebug
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QDir
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QDirIterator
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QFileInfo
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QProcess
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QString
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qabstractitemmodel.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qalgorithms.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qarraydata.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qatomic.h
@@ -33,6 +36,7 @@ CMakeFiles/pcl_cloud_read.dir/main.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qdatastream.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qdebug.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qdir.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qdiriterator.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qeventloop.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qfeatures.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qfile.h
@@ -45,6 +49,7 @@ CMakeFiles/pcl_cloud_read.dir/main.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qhash.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qiodevice.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qisenum.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qitemselectionmodel.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qiterator.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qline.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qlist.h
@@ -62,10 +67,12 @@ CMakeFiles/pcl_cloud_read.dir/main.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qobjectdefs_impl.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qpair.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qpoint.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qprocess.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qprocessordetection.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qrect.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qrefcount.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qregexp.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qregularexpression.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qscopedpointer.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qset.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qshareddata.h
@@ -112,6 +119,7 @@ CMakeFiles/pcl_cloud_read.dir/main.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qtextoption.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qtouchdevice.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qtransform.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qvalidator.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qvector2d.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qwindowdefs.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qwindowdefs_win.h
@@ -120,8 +128,13 @@ CMakeFiles/pcl_cloud_read.dir/main.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsScene
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsView
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QLabel
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QListWidgetItem
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMainWindow
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractitemdelegate.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractitemview.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractscrollarea.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractslider.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractspinbox.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qapplication.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qdesktopwidget.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qdialog.h
@@ -130,9 +143,16 @@ CMakeFiles/pcl_cloud_read.dir/main.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qgraphicsscene.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qgraphicsview.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlabel.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlistview.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlistwidget.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmainwindow.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qrubberband.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qscrollarea.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qsizepolicy.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qslider.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qstyle.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qstyleoption.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qtabbar.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qtabwidget.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qwidget.h
  /media/ttzhou/documents/robosense/qtUi/1025/pcl_cloud_visualizer/pcl_cloud_read/main.cpp
@@ -664,7 +684,10 @@ CMakeFiles/pcl_cloud_read.dir/main.cpp.o
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QDebug
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QDir
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QDirIterator
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QProcess
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QString
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qabstractitemmodel.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qalgorithms.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qarraydata.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qatomic.h
@@ -691,6 +714,7 @@ CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qdatastream.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qdebug.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qdir.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qdiriterator.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qfeatures.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qfile.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qfiledevice.h
@@ -702,6 +726,7 @@ CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qhash.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qiodevice.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qisenum.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qitemselectionmodel.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qiterator.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qline.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qlist.h
@@ -719,10 +744,12 @@ CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qobjectdefs_impl.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qpair.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qpoint.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qprocess.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qprocessordetection.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qrect.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qrefcount.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qregexp.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qregularexpression.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qscopedpointer.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qset.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qshareddata.h
@@ -767,6 +794,7 @@ CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qtextoption.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qtouchdevice.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qtransform.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qvalidator.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qvector2d.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qwindowdefs.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtGui/qwindowdefs_win.h
@@ -774,17 +802,29 @@ CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsScene
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsView
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QLabel
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QListWidgetItem
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMainWindow
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractitemdelegate.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractitemview.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractscrollarea.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractslider.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractspinbox.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qdialog.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qfiledialog.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qframe.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qgraphicsscene.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qgraphicsview.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlabel.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlistview.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlistwidget.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmainwindow.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qrubberband.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qscrollarea.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qsizepolicy.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qslider.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qstyle.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qstyleoption.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qtabbar.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qtabwidget.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qwidget.h
  /media/ttzhou/documents/robosense/qtUi/1025/pcl_cloud_visualizer/pcl_cloud_read/build/moc_pcl_visualizer.cpp
@@ -1317,7 +1357,9 @@ CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QDebug
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QDir
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QDirIterator
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QObject
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QProcess
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QString
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/QVariant
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qabstractitemmodel.h
@@ -1348,6 +1390,7 @@ CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qdatastream.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qdebug.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qdir.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qdiriterator.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qeventloop.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qfeatures.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qfile.h
@@ -1378,6 +1421,7 @@ CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qobjectdefs_impl.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qpair.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qpoint.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qprocess.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qprocessordetection.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qrect.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtCore/qrefcount.h
@@ -1442,10 +1486,11 @@ CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QHBoxLayout
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QHeaderView
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QLabel
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QListWidget
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QListWidgetItem
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMainWindow
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMenuBar
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QPushButton
- /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QSpacerItem
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QStatusBar
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QToolBar
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QWidget
@@ -1471,6 +1516,8 @@ CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlabel.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlayout.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlayoutitem.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlistview.h
+ /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlistwidget.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmainwindow.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmenu.h
  /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmenubar.h
