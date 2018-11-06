@@ -13,6 +13,7 @@
 #include<QListWidgetItem>
 #include<QProcess>
 #include<QDirIterator>
+#include<QMessageBox>
 
 #include<pcl/point_cloud.h>
 #include<pcl/point_types.h>
@@ -54,6 +55,8 @@ private slots:
     void onPushNext();
     void onOpenBin();
     void onOpenPcdDir();
+    void double_clicked_listwidget_pic(QListWidgetItem *item);
+    void double_clicked_listwidget_pcd(QListWidgetItem *item);
 
 
 private:
@@ -62,7 +65,7 @@ private:
     boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer; //初始化vtk部件
     void initialVtkWidget();
     cv::Mat image;
-    int index;
+    int index_pic,index_pcd;
     std::string filePicdir_str,filePcdDir_str;
     QStringList filter_pic,filter_pcd;
     QString load_file_path,load_pic_path;

@@ -38,14 +38,12 @@ public:
     QPushButton *pushButton_dir;
     QPushButton *pushButton_pic;
     QPushButton *pushButton_pcl;
-    QWidget *layoutWidget1;
-    QHBoxLayout *horizontalLayout_2;
     QPushButton *on_push_bin;
     QPushButton *on_push_bin_dir;
     QListWidget *listWidget;
-    QPushButton *next;
     QPushButton *previous;
     QListWidget *listWidget_pic;
+    QPushButton *next;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -54,15 +52,15 @@ public:
     {
         if (pcl_visualizer->objectName().isEmpty())
             pcl_visualizer->setObjectName(QStringLiteral("pcl_visualizer"));
-        pcl_visualizer->resize(1225, 680);
+        pcl_visualizer->resize(1225, 829);
         centralWidget = new QWidget(pcl_visualizer);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         labelimage = new QLabel(centralWidget);
         labelimage->setObjectName(QStringLiteral("labelimage"));
-        labelimage->setGeometry(QRect(320, 50, 441, 371));
+        labelimage->setGeometry(QRect(320, 50, 871, 351));
         qvtkWidget = new QVTKWidget(centralWidget);
         qvtkWidget->setObjectName(QStringLiteral("qvtkWidget"));
-        qvtkWidget->setGeometry(QRect(760, 40, 461, 391));
+        qvtkWidget->setGeometry(QRect(320, 410, 901, 351));
         layoutWidget = new QWidget(centralWidget);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
         layoutWidget->setGeometry(QRect(50, 0, 282, 29));
@@ -86,14 +84,6 @@ public:
 
         horizontalLayout->addWidget(pushButton_pcl);
 
-        layoutWidget1 = new QWidget(centralWidget);
-        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(330, 470, 452, 29));
-        horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
-        horizontalLayout_2->setSpacing(6);
-        horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
         on_push_bin = new QPushButton(centralWidget);
         on_push_bin->setObjectName(QStringLiteral("on_push_bin"));
         on_push_bin->setGeometry(QRect(330, 0, 99, 27));
@@ -103,26 +93,16 @@ public:
         listWidget = new QListWidget(centralWidget);
         listWidget->setObjectName(QStringLiteral("listWidget"));
         listWidget->setGeometry(QRect(20, 40, 291, 201));
-        next = new QPushButton(centralWidget);
-        next->setObjectName(QStringLiteral("next"));
-        next->setGeometry(QRect(700, 470, 85, 27));
         previous = new QPushButton(centralWidget);
         previous->setObjectName(QStringLiteral("previous"));
-        previous->setGeometry(QRect(335, 470, 85, 27));
+        previous->setGeometry(QRect(10, 490, 85, 27));
         listWidget_pic = new QListWidget(centralWidget);
         listWidget_pic->setObjectName(QStringLiteral("listWidget_pic"));
         listWidget_pic->setGeometry(QRect(20, 250, 291, 211));
+        next = new QPushButton(centralWidget);
+        next->setObjectName(QStringLiteral("next"));
+        next->setGeometry(QRect(150, 490, 85, 27));
         pcl_visualizer->setCentralWidget(centralWidget);
-        labelimage->raise();
-        qvtkWidget->raise();
-        layoutWidget->raise();
-        layoutWidget->raise();
-        on_push_bin->raise();
-        on_push_bin_dir->raise();
-        listWidget->raise();
-        next->raise();
-        previous->raise();
-        listWidget_pic->raise();
         menuBar = new QMenuBar(pcl_visualizer);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 1225, 31));
@@ -148,8 +128,8 @@ public:
         pushButton_pcl->setText(QApplication::translate("pcl_visualizer", "open_pcd", 0));
         on_push_bin->setText(QApplication::translate("pcl_visualizer", "open_bin_file", 0));
         on_push_bin_dir->setText(QApplication::translate("pcl_visualizer", "open_pcd_dir", 0));
-        next->setText(QApplication::translate("pcl_visualizer", "next", 0));
         previous->setText(QApplication::translate("pcl_visualizer", "previous", 0));
+        next->setText(QApplication::translate("pcl_visualizer", "next", 0));
     } // retranslateUi
 
 };

@@ -1178,6 +1178,10 @@ qmainwindow.h
 qmenubar.h
 /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmenubar.h
 
+/home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMessageBox
+qmessagebox.h
+/home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmessagebox.h
+
 /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QPushButton
 qpushbutton.h
 /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qpushbutton.h
@@ -1406,6 +1410,10 @@ windef.h
 QtWidgets/qmenu.h
 -
 
+/home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmessagebox.h
+QtWidgets/qdialog.h
+-
+
 /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qpushbutton.h
 QtWidgets/qabstractbutton.h
 -
@@ -1570,6 +1578,8 @@ QListWidgetItem
 QProcess
 -
 QDirIterator
+-
+QMessageBox
 -
 pcl/point_cloud.h
 -

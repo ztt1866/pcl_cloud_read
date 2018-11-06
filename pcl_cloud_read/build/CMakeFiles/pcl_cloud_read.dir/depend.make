@@ -129,6 +129,7 @@ CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/includ
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QLabel
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QListWidgetItem
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMainWindow
+CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMessageBox
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractitemdelegate.h
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractitemview.h
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractscrollarea.h
@@ -145,6 +146,7 @@ CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/includ
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlistview.h
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlistwidget.h
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmainwindow.h
+CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmessagebox.h
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qrubberband.h
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qscrollarea.h
 CMakeFiles/pcl_cloud_read.dir/main.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qsizepolicy.h
@@ -803,6 +805,7 @@ CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QLabel
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QListWidgetItem
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMainWindow
+CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMessageBox
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractitemdelegate.h
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractitemview.h
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractscrollarea.h
@@ -817,6 +820,7 @@ CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlistview.h
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlistwidget.h
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmainwindow.h
+CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmessagebox.h
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qrubberband.h
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qscrollarea.h
 CMakeFiles/pcl_cloud_read.dir/pcl_cloud_read_automoc.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qsizepolicy.h
@@ -1489,6 +1493,7 @@ CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QListWidgetItem
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMainWindow
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMenuBar
+CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMessageBox
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QPushButton
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QStatusBar
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/QToolBar
@@ -1520,6 +1525,7 @@ CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmainwindow.h
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmenu.h
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmenubar.h
+CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qmessagebox.h
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qpushbutton.h
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qrubberband.h
 CMakeFiles/pcl_cloud_read.dir/pcl_visualizer.cpp.o: /home/ttzhou/Qt5.5.1/5.5/gcc_64/include/QtWidgets/qscrollarea.h

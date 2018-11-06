@@ -1,6 +1,9 @@
 #include "pcl_visualizer.h"
 #include "ui_pcl_visualizer.h"
 
+void warning_prompting_pcd();
+void warning_prompting_pic();
+
 pcl_visualizer::pcl_visualizer(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::pcl_visualizer)
@@ -19,6 +22,8 @@ pcl_visualizer::pcl_visualizer(QWidget *parent) :
     connect(ui->next,SIGNAL(clicked()),this,SLOT(onPushNext()));
     connect(ui->on_push_bin,SIGNAL(clicked()),this,SLOT(onOpenBin()));
     connect(ui->on_push_bin_dir,SIGNAL(clicked()),this,SLOT(onOpenPcdDir()));
+    connect(ui->listWidget,SIGNAL(itemDoubleClicked(QListWidgetItem*)),this,SLOT(double_clicked_listwidget_pcd(QListWidgetItem *)));
+    connect(ui->listWidget_pic,SIGNAL(itemDoubleClicked(QListWidgetItem*)),this,SLOT(double_clicked_listwidget_pic(QListWidgetItem*)));
 }
 
 void pcl_visualizer::initialVtkWidget(){
@@ -26,6 +31,7 @@ void pcl_visualizer::initialVtkWidget(){
     viewer.reset(new pcl::visualization::PCLVisualizer("viewer",false));
 
     viewer->addPointCloud(cloud,"cloud");
+
 
     ui->qvtkWidget->SetRenderWindow(viewer->getRenderWindow());
     viewer->setupInteractor(ui->qvtkWidget->GetInteractor(),ui->qvtkWidget->GetRenderWindow());
@@ -74,10 +80,15 @@ void pcl_visualizer::onOpenPcdDir()
 
     ui->listWidget->addItems(pcd_list);
 
+    if(ui->listWidget->currentRow()==-1)
+    {
+        ui->listWidget->setCurrentRow(0);
+    }
+
     if(listpcd.length()!=0)
     {
-        index = 0;
-        pcdFile = listpcd.at(index).fileName();
+        index_pcd = 0;
+        pcdFile = listpcd.at(index_pcd).fileName();
         //std::cout<<pcdFile.toStdString()<<std::endl;
         show_pcd(pcdFile);
 
@@ -103,11 +114,15 @@ void pcl_visualizer::onOpenPicDir(){
     QStringList pic_list = dir_pic.entryList();
 
     ui->listWidget_pic->addItems(pic_list);
+    if(ui->listWidget_pic->currentRow()==-1)
+    {
+        ui->listWidget_pic->setCurrentRow(0);
+    }
 
     if(listpic.length()!=0)
     {
-        index = 0;
-        picFile = listpic.at(index).fileName();
+        index_pic = 0;
+        picFile = listpic.at(index_pic).fileName();
         show_pic(picFile);
     }
 
@@ -118,32 +133,62 @@ void pcl_visualizer::onOpenPicDir(){
 }
 
 void pcl_visualizer::onPushNext(){
-    if(index<listpcd.length()-1)
+    if(index_pcd<listpcd.length()-1)
     {
-        index++;
-        pcdFile = listpcd.at(index).fileName();
-        picFile = listpic.at(index).fileName();
-        show_pic(picFile);
+        index_pcd++;
+        pcdFile = listpcd.at(index_pcd).fileName();
+        //picFile = listpic.at(index_pic).fileName();
+        //show_pic(picFile);
         show_pcd(pcdFile);
+        ui->listWidget->setCurrentRow(index_pcd);
+        //ui->listWidget_pic->setCurrentRow(index);
+    }
+    else
+    {
+        //std::cout<<"You have looked all the pcd files!"<<std::endl;
+        warning_prompting_pcd();
+    }
+    if(index_pic<listpic.length()-1)
+    {
+        index_pic++;
+        picFile = listpic.at(index_pic).fileName();
+        show_pic(picFile);
+        ui->listWidget_pic->setCurrentRow(index_pic);
     }
     else {
-        std::cout<<"You have looked all the files!"<<std::endl;
+        //std::cout<<"You have looked all the pic files!"<<std::endl;
+        warning_prompting_pic();
+
     }
 
 
 }
 
 void pcl_visualizer::onPushPrevious(){
-    if(index>0)
+    if(index_pcd>0)
     {
-        index--;
-        pcdFile = listpcd.at(index).fileName();
-        picFile = listpic.at(index).fileName();
-        show_pic(picFile);
+        index_pcd--;
+        pcdFile = listpcd.at(index_pcd).fileName();
+        //picFile = listpic.at(index).fileName();
+        //show_pic(picFile);
+        ui->listWidget->setCurrentRow(index_pcd);
+        //ui->listWidget_pic->setCurrentRow(index);
         show_pcd(pcdFile);
     }
     else {
-        std::cout<<"You are looking at the first file!"<<std::endl;
+        //std::cout<<"You are looking at the first pcd file!"<<std::endl;
+        warning_prompting_pcd();
+    }
+    if(index_pic>0)
+    {
+        index_pic--;
+        picFile = listpic.at(index_pic).fileName();
+        show_pic(picFile);
+        ui->listWidget_pic->setCurrentRow(index_pic);
+    }
+    else{
+        //std::cout<<"You are looking at the first pic file"<<std::endl;
+        warning_prompting_pic();
     }
 
 
@@ -223,8 +268,59 @@ void pcl_visualizer::show_pic(QString filename_pic){
 
     image = cv::imread(filePicdir_str + '/' + filename_pic.toLatin1().data());
     cv::cvtColor(image,image,CV_BGR2RGB);
-    cv::resize(image,image,cv::Size(420,350),(0,0),(0,0),cv::INTER_NEAREST);
+    cv::resize(image,image,cv::Size(900,350),(0,0),(0,0),cv::INTER_NEAREST);
     QImage img = QImage((const unsigned char*)(image.data),image.cols,image.rows,QImage::Format_RGB888);
     ui->labelimage->setPixmap(QPixmap::fromImage(img));
     ui->labelimage->resize(ui->labelimage->pixmap()->size());
+    if(ui->listWidget_pic->currentRow()==-1)
+    {
+        ui->listWidget_pic->setCurrentRow(0);
+    }
+}
+
+void warning_prompting_pic()
+{
+    QMessageBox *msgBox;
+    msgBox = new QMessageBox("Warning","You have looked all the pic file!",QMessageBox::Warning,QMessageBox::Ok|QMessageBox::Default,QMessageBox::Cancel|QMessageBox::Escape,0);
+    msgBox->show();
+}
+void warning_prompting_pcd()
+{
+    QMessageBox *msgBox;
+    msgBox = new QMessageBox("Warning","You have looked all the pcd file!",QMessageBox::Warning,QMessageBox::Ok|QMessageBox::Default,QMessageBox::Cancel|QMessageBox::Escape,0);
+    msgBox->show();
+}
+
+void pcl_visualizer::double_clicked_listwidget_pic(QListWidgetItem *item)
+{
+    if(ui->listWidget_pic->count()!=0)
+    {
+        item->setFlags(item->flags());//|Qt::ItemIsEditable
+        index_pic = ui->listWidget_pic->currentRow();
+        index_pcd = index_pic;
+        std::cout<<index_pic<<std::endl;
+        picFile = listpic.at(index_pic).fileName();
+        pcdFile = listpcd.at(index_pcd).fileName();
+        show_pcd(pcdFile);
+        show_pic(picFile);
+        ui->listWidget->setCurrentRow(index_pcd);
+        ui->listWidget_pic->setCurrentRow(index_pic);
+    }
+}
+
+void pcl_visualizer::double_clicked_listwidget_pcd(QListWidgetItem *item)
+{
+    if(ui->listWidget->count()!=0)
+    {
+        item->setFlags(item->flags());
+        index_pic = ui->listWidget->currentRow();
+        index_pcd = index_pic;
+        std::cout<<index_pic<<std::endl;
+        picFile = listpic.at(index_pic).fileName();
+        pcdFile = listpcd.at(index_pcd).fileName();
+        show_pcd(pcdFile);
+        show_pic(picFile);
+        ui->listWidget->setCurrentRow(index_pcd);
+        ui->listWidget_pic->setCurrentRow(index_pic);
+    }
 }
